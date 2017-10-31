@@ -1,0 +1,21 @@
+{
+  "name": "node_docker",
+  "version": "1.0.0",
+  "description": "Node.js on Docker",
+  "author": "Daniel Gomez <gomez.danielg@gmail.com>",
+  "private": true,
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "browserify assets/js/main.js -o public/js/bundle.js"
+  },
+  "dependencies": {
+    "browserify": "^14.5.0",
+    "express": "^4.13.3",
+    "vue": "^2.5.2",
+    "vue-carousel": "^0.6.5"
+  },
+  "browser": {
+    "vue": "vue/dist/vue.common.js"
+  }
+}
